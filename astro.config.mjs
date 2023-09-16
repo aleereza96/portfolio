@@ -1,19 +1,22 @@
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
-import tailwind from "@astrojs/tailwind";
+import { defineConfig } from 'astro/config'
+import mdx from '@astrojs/mdx'
+import sitemap from '@astrojs/sitemap'
+import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
-import image from "@astrojs/image";
+import image from '@astrojs/image'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'alireza-mousavi.com',
-  integrations: [mdx(), sitemap(), tailwind(), image(
-    {
-      serviceEntryPoint: '@astrojs/image/sharp',
-      cacheDir: "./.cache/image",
-      logLevel: 'debug',
-    }
-  )]
-});
+	site: 'aleereza96.github.io',
+	integrations: [
+		mdx(),
+		sitemap(),
+		tailwind(),
+		image({
+			serviceEntryPoint: '@astrojs/image/sharp',
+			cacheDir: './.cache/image',
+			logLevel: 'debug',
+		}),
+	],
+})
