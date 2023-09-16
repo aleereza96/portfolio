@@ -9,7 +9,6 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: 'alireza-mousavi.com',
-  base:'/portfolio',
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
